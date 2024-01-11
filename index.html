@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Заголовок страницы</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="./style.css">
+
+</head>
+<body>
+<form class="data_user">
+    <div class="input_box">
+        <label><input type="text" id="name" placeholder="только буквы без пробелов"><span>Имя</span></label>
+        <label><input type="text" id="data" placeholder="ДД/ММ/ГГГГ"><span> Дата рождения</span></label>
+        <label><input type="text" id="url" placeholder="https://||http://"><span>Адрес сайта</span></label>
+        <label><input type="text" id="ip" placeholder="XXX.XXX.XXX.XXX"><span>IP-адрес</span></label>
+        <label><input type="text" id="credit" placeholder="XXXX-XXXX-XXXX-XXXX"><span>Номер кредитной карты</span></label>
+        <label><input type="text" id="email" placeholder="....@gmail.com"><span> Имейл</span></label>
+        <label><input type="text" id="phone" placeholder="+380..."><span> Номер телефона</span></label>
+        <label><input type="text" id="password" placeholder="Строчная,заглавная,цыфра,спец.символ" ><span>Пароль</span></label>
+        <label><input type="text" id="password2"><span> Повторите Пароль</span></label>
+
+    </div>
+
+    <input class="form_button" type="submit" value="Отправить">
+</form>
+<div class="succes_message hidden"><p>Данные успешно отправлены</p><button class="close">Закрыть</button></div>
+<script src="script.js"></script>
+</body>
+</html>
