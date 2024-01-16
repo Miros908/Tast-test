@@ -1,0 +1,45 @@
+@import 'wrapper.scss';
+@import 'side-menu/side-menu';
+@import 'side-menu/side-manu-wrapper';
+@import 'info-display/info-display';
+@import 'info-display/search-section.scss';
+@import 'info-display/customer-info';
+
+//Размеры экранов
+$breakpoint-md: 768px; // планшеты
+$breakpoint-xl: 1200px; // ПК
+
+
+@font-face {
+  font-family: "Poppins";
+  src: url('fonts/Poppins-Medium.woff') format('woff'), url('fonts/Poppins-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url('fonts/Poppins-Regular.woff') format('woff'), url('fonts/Poppins-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url('fonts/Poppins-SemiBold.woff') format('woff'), url('fonts/Poppins-SemiBold.woff2') format('woff2');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+  letter-spacing: -0.14px;
+
+
+}
+

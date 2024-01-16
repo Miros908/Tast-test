@@ -1,30 +1,353 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 <head>
     <title>Заголовок страницы</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="./style.css">
+    <link rel="stylesheet" type="text/css" href="css/crossbrowser.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+
 
 </head>
+
 <body>
-<form class="data_user">
-    <div class="input_box">
-        <label><input type="text" id="name" placeholder="только буквы без пробелов"><span>Имя</span></label>
-        <label><input type="text" id="data" placeholder="ДД/ММ/ГГГГ"><span> Дата рождения</span></label>
-        <label><input type="text" id="url" placeholder="https://||http://"><span>Адрес сайта</span></label>
-        <label><input type="text" id="ip" placeholder="XXX.XXX.XXX.XXX"><span>IP-адрес</span></label>
-        <label><input type="text" id="credit" placeholder="XXXX-XXXX-XXXX-XXXX"><span>Номер кредитной карты</span></label>
-        <label><input type="text" id="email" placeholder="....@gmail.com"><span> Имейл</span></label>
-        <label><input type="text" id="phone" placeholder="+380..."><span> Номер телефона</span></label>
-        <label><input type="text" id="password" placeholder="Строчная,заглавная,цыфра,спец.символ" ><span>Пароль</span></label>
-        <label><input type="text" id="password2"><span> Повторите Пароль</span></label>
+<div class="wrapper">
+    <div class="side-menu">
+        <div class="side-menu__logo-container">
+            <img class="side-menu__logo" src="">
+            <span class="side-menu__name">Dashboard</span>
+            <span class="side-menu__version">v.01</span>
 
+            <button class="side-menu__mobile-burger"></button>
+        </div>
+        <div class="side-menu__wrapper-list-user-info">
+            <div class="side-menu__list">
+                <div class="side-menu__list-item">
+                    <img class="side-menu__list-item-img" src="images/icons/product.svg">
+                    <span class="side-menu__list-item-text">Dashboard</span>
+
+                </div>
+                <div class="side-menu__list-item">
+                    <img class="side-menu__list-item-img" src="">
+                    <span class="side-menu__list-item-text">Product</span>
+
+                </div>
+                <div class="side-menu__list-item">
+                    <img class="side-menu__list-item-img" src="">
+                    <span class="side-menu__list-item-text">Customers</span>
+
+                </div>
+                <div class="side-menu__list-item">
+                    <img class="side-menu__list-item-img" src="">
+                    <span class="side-menu__list-item-text">Income</span>
+
+                </div>
+                <div class="side-menu__list-item">
+                    <img class="side-menu__list-item-img" src="">
+                    <span class="side-menu__list-item-text">Promote</span>
+
+                </div>
+                <div class="side-menu__list-item">
+                    <img class="side-menu__list-item-img" src="">
+                    <span class="side-menu__list-item-text">Help</span>
+
+                </div>
+
+
+            </div>
+            <div class="side-menu__user-info">
+                <img class="side-menu__user-info-img" src="">
+                <div class="side-menu__user-info-description">
+                    <span class="side-menu__user-info-description-name">Evano</span>
+                    <span class="side-menu__user-info-description-post">Project Manager</span>
+                </div>
+            </div>
+
+        </div>
     </div>
+    <div class="wrapper-info-display">
+        <div class="info-display">
+            <div class="search-section">
+                <div class="search-section__head">
+                    All Customers
+                    <span class="search-section__status">Active Members</span>
+                </div>
+                <input class="search-section__input" type="search" value="Search">
 
-    <input class="form_button" type="submit" value="Отправить">
-</form>
-<div class="succes_message hidden"><p>Данные успешно отправлены</p><button class="close">Закрыть</button></div>
-<script src="script.js"></script>
+            </div>
+
+            <div class="customers-info-list">
+                <div class="customers-item">
+                    <div class="customers-item__wrapper-head">
+                        <div class="customers-item__head">Customer Name</div>
+                        <div class="customers-item__head">Company</div>
+                        <div class="customers-item__head">Phone Number</div>
+                        <div class="customers-item__head">Email</div>
+                        <div class="customers-item__head">Country</div>
+                        <div class="customers-item__head">Status</div>
+                    </div>
+                    <div class="customers-item__wrapper-client-info">
+                        <div class="customers-item__client-info">Jane Cooper</div>
+                        <div class="customers-item__client-info">Microsoft</div>
+                        <div class="customers-item__client-info">(225) 555-0118</div>
+                        <div class="customers-item__client-info">jane@microsoft.com</div>
+                        <div class="customers-item__client-info">United States</div>
+                        <div class="customers-item__client-info">Active</div>
+
+                    </div>
+                </div>
+
+                <div class="customers-item">
+                    <div class="customers-item__wrapper-head">
+                        <div class="customers-item__head">Customer Name</div>
+                        <div class="customers-item__head">Company</div>
+                        <div class="customers-item__head">Phone Number</div>
+                        <div class="customers-item__head">Email</div>
+                        <div class="customers-item__head">Country</div>
+                        <div class="customers-item__head">Status</div>
+                    </div>
+                    <div class="customers-item__wrapper-client-info">
+                        <div class="customers-item__client-info">Floyd Miles</div>
+                        <div class="customers-item__client-info">Yahoo</div>
+                        <div class="customers-item__client-info">(205) 555-0100</div>
+                        <div class="customers-item__client-info">floyd@yahoo.com</div>
+                        <div class="customers-item__client-info">Kiribati</div>
+                        <div class="customers-item__client-info">Inactive</div>
+
+                    </div>
+                </div>
+
+
+                <div class="customers-item">
+                    <div class="customers-item__wrapper-head">
+                        <div class="customers-item__head">Customer Name</div>
+                        <div class="customers-item__head">Company</div>
+                        <div class="customers-item__head">Phone Number</div>
+                        <div class="customers-item__head">Email</div>
+                        <div class="customers-item__head">Country</div>
+                        <div class="customers-item__head">Status</div>
+                    </div>
+                    <div class="customers-item__wrapper-client-info">
+                        <div class="customers-item__client-info">Ronald Richards</div>
+                        <div class="customers-item__client-info">Adobe</div>
+                        <div class="customers-item__client-info">(302) 555-0107</div>
+                        <div class="customers-item__client-info">ronald@adobe.com</div>
+                        <div class="customers-item__client-info">Israel</div>
+                        <div class="customers-item__client-info">Inactive</div>
+
+                    </div>
+                </div>
+
+
+                <div class="customers-item">
+                    <div class="customers-item__wrapper-head">
+                        <div class="customers-item__head">Customer Name</div>
+                        <div class="customers-item__head">Company</div>
+                        <div class="customers-item__head">Phone Number</div>
+                        <div class="customers-item__head">Email</div>
+                        <div class="customers-item__head">Country</div>
+                        <div class="customers-item__head">Status</div>
+                    </div>
+                    <div class="customers-item__wrapper-client-info">
+                        <div class="customers-item__client-info">Marvin McKinney</div>
+                        <div class="customers-item__client-info">Tesla</div>
+                        <div class="customers-item__client-info">(252) 555-0126</div>
+                        <div class="customers-item__client-info">marvin@tesla.com</div>
+                        <div class="customers-item__client-info">Iran</div>
+                        <div class="customers-item__client-info">Active</div>
+
+                    </div>
+                </div>
+
+
+                <div class="customers-item">
+                    <div class="customers-item__wrapper-head">
+                        <div class="customers-item__head">Customer Name</div>
+                        <div class="customers-item__head">Company</div>
+                        <div class="customers-item__head">Phone Number</div>
+                        <div class="customers-item__head">Email</div>
+                        <div class="customers-item__head">Country</div>
+                        <div class="customers-item__head">Status</div>
+                    </div>
+                    <div class="customers-item__wrapper-client-info">
+                        <div class="customers-item__client-info">Jerome Bell</div>
+                        <div class="customers-item__client-info">Google</div>
+                        <div class="customers-item__client-info">(629) 555-0129</div>
+                        <div class="customers-item__client-info">jerome@google.com</div>
+                        <div class="customers-item__client-info">Réunion</div>
+                        <div class="customers-item__client-info">Active</div>
+
+                    </div>
+                </div>
+
+
+                <div class="customers-item">
+                    <div class="customers-item__wrapper-head">
+                        <div class="customers-item__head">Customer Name</div>
+                        <div class="customers-item__head">Company</div>
+                        <div class="customers-item__head">Phone Number</div>
+                        <div class="customers-item__head">Email</div>
+                        <div class="customers-item__head">Country</div>
+                        <div class="customers-item__head">Status</div>
+                    </div>
+                    <div class="customers-item__wrapper-client-info">
+                        <div class="customers-item__client-info">Kathryn Murphy</div>
+                        <div class="customers-item__client-info">Microsoft</div>
+                        <div class="customers-item__client-info">(406) 555-0120</div>
+                        <div class="customers-item__client-info">kathryn@microsoft.com</div>
+                        <div class="customers-item__client-info">Curaçao</div>
+                        <div class="customers-item__client-info">Active</div>
+
+                    </div>
+                </div>
+
+
+                <div class="customers-item">
+                    <div class="customers-item__wrapper-head">
+                        <div class="customers-item__head">Customer Name</div>
+                        <div class="customers-item__head">Company</div>
+                        <div class="customers-item__head">Phone Number</div>
+                        <div class="customers-item__head">Email</div>
+                        <div class="customers-item__head">Country</div>
+                        <div class="customers-item__head">Status</div>
+                    </div>
+                    <div class="customers-item__wrapper-client-info">
+                        <div class="customers-item__client-info">Jacob Jones</div>
+                        <div class="customers-item__client-info">Yahoo</div>
+                        <div class="customers-item__client-info">(208) 555-0112</div>
+                        <div class="customers-item__client-info">jacob@yahoo.com</div>
+                        <div class="customers-item__client-info">Brazil</div>
+                        <div class="customers-item__client-info">Active</div>
+
+                    </div>
+                </div>
+
+
+                <div class="customers-item">
+                    <div class="customers-item__wrapper-head">
+                        <div class="customers-item__head">Customer Name</div>
+                        <div class="customers-item__head">Company</div>
+                        <div class="customers-item__head">Phone Number</div>
+                        <div class="customers-item__head">Email</div>
+                        <div class="customers-item__head">Country</div>
+                        <div class="customers-item__head">Status</div>
+                    </div>
+                    <div class="customers-item__wrapper-client-info">
+                        <div class="customers-item__client-info">Kristin Watson</div>
+                        <div class="customers-item__client-info">Facebook</div>
+                        <div class="customers-item__client-info">(704) 555-0127</div>
+                        <div class="customers-item__client-info">kristin@facebook.com</div>
+                        <div class="customers-item__client-info">Åland Islands</div>
+                        <div class="customers-item__client-info">Inactive</div>
+
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div class="customers-info-table-md">
+                <div class="customers-col-md">
+                    <div class="customers-col-md__item-head">Customer Name</div>
+                    <div class="customers-col-md__item">Jane Cooper</div>
+                    <div class="customers-col-md__item">Floyd Miles</div>
+                    <div class="customers-col-md__item">Ronald Richards</div>
+                    <div class="customers-col-md__item">Marvin McKinney</div>
+                    <div class="customers-col-md__item">Jerome Bell</div>
+                    <div class="customers-col-md__item">Kathryn Murphy</div>
+                    <div class="customers-col-md__item">Jacob Jones</div>
+                    <div class="customers-col-md__item">Kristin Watson</div>
+
+                </div>
+
+                <div class="customers-col-md">
+                    <div class="customers-col-md__item-head">Company</div>
+                    <div class="customers-col-md__item">Microsoft</div>
+                    <div class="customers-col-md__item">Yahoo</div>
+                    <div class="customers-col-md__item">Adobe</div>
+                    <div class="customers-col-md__item">Tesla</div>
+                    <div class="customers-col-md__item">Google</div>
+                    <div class="customers-col-md__item">Microsoft</div>
+                    <div class="customers-col-md__item">Yahoo</div>
+                    <div class="customers-col-md__item">Facebook</div>
+
+                </div>
+
+                <div class="customers-col-md">
+
+                    <div class="customers-col-md__item-head">Phone Number</div>
+                    <div class="customers-col-md__item">(225) 555-0118</div>
+                    <div class="customers-col-md__item">(205) 555-0100</div>
+                    <div class="customers-col-md__item">(302) 555-0107</div>
+                    <div class="customers-col-md__item">(252) 555-0126</div>
+                    <div class="customers-col-md__item">(629) 555-0129</div>
+                    <div class="customers-col-md__item">(406) 555-0120</div>
+                    <div class="customers-col-md__item">(208) 555-0112</div>
+                    <div class="customers-col-md__item">(704) 555-0127</div>
+
+
+                </div>
+
+                <div class="customers-col-md">
+                    <div class="customers-col-md__item-head">Email</div>
+                    <div class="customers-col-md__item">jane@microsoft.com</div>
+                    <div class="customers-col-md__item">floyd@yahoo.com</div>
+                    <div class="customers-col-md__item">ronald@adobe.com</div>
+                    <div class="customers-col-md__item">marvin@tesla.com</div>
+                    <div class="customers-col-md__item">jerome@google.com</div>
+                    <div class="customers-col-md__item">kathryn@microsoft.com</div>
+                    <div class="customers-col-md__item">jacob@yahoo.com</div>
+                    <div class="customers-col-md__item">kristin@facebook.com</div>
+
+                </div>
+
+                <div class="customers-col-md">
+                    <div class="customers-col-md__item-head">Country</div>
+                    <div class="customers-col-md__item">United States</div>
+                    <div class="customers-col-md__item">Kiribati</div>
+                    <div class="customers-col-md__item">Israel</div>
+                    <div class="customers-col-md__item">Iran</div>
+                    <div class="customers-col-md__item">Réunion</div>
+                    <div class="customers-col-md__item">Curaçao</div>
+                    <div class="customers-col-md__item">Brazil</div>
+                    <div class="customers-col-md__item">Åland Islands</div>
+
+                </div>
+
+                <div class="customers-col-md">
+                    <div class="customers-col-md__item-head">Status</div>
+                    <div class="customers-col-md__item">Active</div>
+                    <div class="customers-col-md__item">Inactive</div>
+                    <div class="customers-col-md__item">Inactive</div>
+                    <div class="customers-col-md__item">Active</div>
+                    <div class="customers-col-md__item">Active</div>
+                    <div class="customers-col-md__item">Active</div>
+                    <div class="customers-col-md__item">Active</div>
+                    <div class="customers-col-md__item">Inactive</div>
+
+                </div>
+
+
+            </div>
+
+            <div class="info-display__pagination">
+                <div class="info-display__pagination-back"></div>
+                <div class="info-display__pagination-item">1</div>
+                <div class="info-display__pagination-item">2</div>
+                <div class="info-display__pagination-item">3</div>
+                <div class="info-display__pagination-item">4</div>
+                <div class="info-display__pagination-item">...</div>
+                <div class="info-display__pagination-item">40</div>
+                <div class="info-display__pagination-next"></div>
+
+            </div>
+
+
+        </div>
+    </div>
+</div>
+
 </body>
+
 </html>
+

@@ -1,0 +1,34 @@
+.customers-info-list{
+  padding-left:30px;
+  @media(min-width:$breakpoint-md){
+    display:none;
+  }
+}
+
+.customers-info-table-md{
+  display:none;
+  @media(min-width:$breakpoint-md){
+    display:flex;
+
+  }
+}
+
+
+.customers-info-md{
+
+  @media(min-width:$breakpoint-md){
+   display:flex
+  }
+}
+
+.customers-item{
+  display:flex;
+  margin-bottom:10px;
+  gap:10px;
+  justify-content: flex-start;
+
+
+
+}
+
+

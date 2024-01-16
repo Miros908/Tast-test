@@ -1,0 +1,22 @@
+
+
+
+
+.info-display{
+display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.info-display__pagination{
+ display: flex;
+  gap:5px;
+}
+
+
+.customers-item{
+ font-size: 12px;
+}

@@ -1,0 +1,16 @@
+.search-section__head {
+  display: none;
+  @media(min-width: $breakpoint-md) {
+    display: flex;
+    flex-direction: column;
+
+  }
+}
+
+.search-section {
+  @media(min-width: $breakpoint-md) {
+    display: flex;
+
+    align-items: flex-start;
+  }
+}

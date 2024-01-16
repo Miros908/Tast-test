@@ -1,0 +1,125 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+@media (min-width: 1200px) {
+  .wrapper {
+    flex-direction: row;
+  }
+}
+
+.side-menu {
+  position: relative;
+}
+
+.side-menu__wrapper-list-user-info {
+  display: flex;
+  flex-direction: column-reverse;
+  text-align: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  display: none;
+}
+@media (min-width: 1200px) {
+  .side-menu__wrapper-list-user-info {
+    display: block;
+    position: static;
+  }
+}
+
+.info-display {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.info-display__pagination {
+  display: flex;
+  gap: 5px;
+}
+
+.customers-item {
+  font-size: 12px;
+}
+
+.search-section__head {
+  display: none;
+}
+@media (min-width: 768px) {
+  .search-section__head {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 768px) {
+  .search-section {
+    display: flex;
+    align-items: flex-start;
+  }
+}
+
+.customers-info-list {
+  padding-left: 30px;
+}
+@media (min-width: 768px) {
+  .customers-info-list {
+    display: none;
+  }
+}
+
+.customers-info-table-md {
+  display: none;
+}
+@media (min-width: 768px) {
+  .customers-info-table-md {
+    display: flex;
+  }
+}
+
+@media (min-width: 768px) {
+  .customers-info-md {
+    display: flex;
+  }
+}
+
+.customers-item {
+  display: flex;
+  margin-bottom: 10px;
+  gap: 10px;
+  justify-content: flex-start;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("fonts/Poppins-Medium.woff") format("woff"), url("fonts/Poppins-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("fonts/Poppins-Regular.woff") format("woff"), url("fonts/Poppins-Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("fonts/Poppins-SemiBold.woff") format("woff"), url("fonts/Poppins-SemiBold.woff2") format("woff2");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+  letter-spacing: -0.14px;
+}
